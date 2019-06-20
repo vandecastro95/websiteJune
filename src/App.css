@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background: #fff9c4;
+  overflow-x: hidden;
 }
 
 .App-logo {
