@@ -1,7 +1,6 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { makeStyles } from '@material-ui/styles';
 import { Grid, Box, Paper } from '@material-ui/core';
-import {Animated} from "react-animated-css";
 import './landingpage.css';
 
 const useStyles = makeStyles({
@@ -20,7 +19,7 @@ const useStyles = makeStyles({
           }
     },
     h1: {
-        fontFamily: "\"Avant Garde\", \'Avantgarde\', \"Century Gothic\", \'CenturyGothic\', \"AppleGothic\", 'sans-serif",
+        fontFamily: "\"Avant Garde\", 'Avantgarde', \"Century Gothic\", 'CenturyGothic', \"AppleGothic\", 'sans-serif",
         textTransform: 'uppercase',
         textRendering: 'optimizeLegibility',
         padding: '0 2rem',
@@ -74,43 +73,43 @@ const useStyles = makeStyles({
   export default function PageOne() {
     const classes = useStyles();
     return (
+        
        <Grid container className={classes.root} >
 
-            <Box className={classes.h1} square={true}>
-
-                <Animated animationIn="fadeIn" isVisible={true}>
+            <Box className={classes.h1}>
                     
-                    <h1 className='shadow-2'>
+                    <h1 className='shadow-21'>
                     Front End Developer
                     </h1>
-                </Animated>
                 
             </Box>
 
 
             <div className={classes.iconBoxContainer}>
-                <Paper className={classes.iconBox} square={true} elevation={21}>
+                <Paper className={classes.iconBox} square={true} elevation={7}>
                     
-                <Animated animationIn="fadeIn" isVisible={true}>
                 <Box className={classes.iconBoxI}>
-                    <i className={classes.icon} class="devicon-react-original colored"></i>
-                    <i className={classes.icon} class="devicon-express-original-wordmark"></i>
-                    <i className={classes.icon} class="devicon-mongodb-plain-wordmark colored"></i>
-                    <i className={classes.icon} class="devicon-nodejs-plain colored"></i>
-                    <i className={classes.icon} class="devicon-html5-plain-wordmark"></i>
-                    <i className={classes.icon} class="devicon-css3-plain"></i>
-                    <i className={classes.icon} class="devicon-javascript-plain colored"></i>
-                    <i className={classes.icon} class="devicon-jquery-plain-wordmark colored"></i>
-                    <i className={classes.icon} class="devicon-bootstrap-plain"></i>
-                    <i className={classes.icon} class="devicon-heroku-original-wordmark"></i>
-                    <i className={classes.icon} class="devicon-git-plain"></i>
-                    <i className={classes.icon} class="devicon-github-plain-wordmark"></i>
-                    <i className={classes.icon} class="devicon-babel-plain"></i>
-                    <i className={classes.icon} class="devicon-mysql-plain colored"></i>
-                    <i className={classes.icon} class="devicon-sequelize-plain-wordmark"></i>
-                    <i className={classes.icon} class="devicon-webpack-plain-wordmark"></i>
+                    <div className="skillsImg">
+                        <img alt="react" height="48" width="48" title="React.js" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/react.svg" />
+                        <img alt="MongoDB" height="48" width="48" title="MongoDB" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/mongodb.svg" />
+                        <img alt="React-Redux" height="48" width="48" title="React Redux" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/redux.svg" />
+                        <img alt="Node.js" height="48" width="48" title="Node.js" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/node-dot-js.svg" />
+                        <img alt="MySQL" height="48" width="48" title="MySQL" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/mysql.svg" />
+                        <img alt="Javascript" height="48" width="48" title="Javascript" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/javascript.svg" />
+                        <img alt="CSS3" height="48" width="48" title="CSS3" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/css3.svg" />
+                        <img alt="HTML5" height="48" width="48" title="HTML5" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/html5.svg" />
+                        <img alt="MaterialUI" height="48" width="48" title="Material UI" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/materialdesign.svg" />
+                        <img alt="GraphQL" height="48" width="48" title="GraphQL" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/graphql.svg" />
+                        <img alt="Github" height="48" width="48" title="Github" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg" />
+                        <img alt="Git" height="48" width="48" title="Git" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/git.svg" />
+                        <img alt="Jest" height="48" width="48" title="Jest/Enzyme" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/jest.svg" />
+                        <img alt="Webpack" height="48" width="48" title="Webpack" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/webpack.svg" />
+                        <img alt="Auth0" height="48" width="48" title="Auth0" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/auth0.svg" />
+                        <img alt="NPM" height="48" width="48" title="NPM" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/npm.svg" />
+                        <img alt="Stack Overflow" height="48" width="48" title="Stack Overflow" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/stackoverflow.svg" />
+                        <img alt="Firebase  " height="48" width="48" title="Firebase" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/firebase.svg" />
+                    </div>
                 </Box>
-                </Animated>
                 <Box className="shadow-3">
                 &nbsp;&nbsp; SKILLS
                 </Box>

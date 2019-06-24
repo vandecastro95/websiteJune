@@ -13,6 +13,20 @@
 }
 
 .shadow-2 {
+  margin-left: 1rem;
+  color: #1A1A1A;
+  font-size: 2.4rem;
+  background-color: rgba(0,0,0,0);
+  letter-spacing: 0rem;
+  word-spacing: -.14rem;
+  line-height: 1em;
+  text-shadow: 
+  4px 4px 0px #CCC893,
+  7px 7px 0px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.shadow-21 {
   color: #191919;
   font-size: 3rem;
   background-color: rgba(0,0,0,0);
@@ -20,8 +34,8 @@
   word-spacing: -.14rem;
   line-height: 1em;
   text-shadow: 
-    4px 4px 0px rgb(255, 255, 255), 
-    7px 7px 0px rgba(0, 0, 0, 0.2);
+  4px 4px 0px #CCC893,
+  7px 7px 0px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
 
@@ -47,11 +61,10 @@
   10px 10px 1px rgba(0, 0, 0, 0.2);
 }
 
-i {
-  font-size: 48px;
+.skillsImg img {
+  justify-self: self-end;
   margin: 1rem;
 }
-
 
 @media (min-width: 768px) {
   .shadow {
@@ -60,18 +73,33 @@ i {
       text-align: center;
   }
   .shadow-2 {
+    font-size: 6rem;
+    letter-spacing: -.5rem;
+    text-align: left;
+    align-self: flex-start;
+    justify-content: flex-start;
+  }
+
+  .shadow-21 {
     font-size: 8rem;
     letter-spacing: -.5rem;
     text-align: left;
     align-self: flex-start;
     justify-content: flex-start;
   }
-  
+
+  .skillsImg img {
+    margin: 1rem;
+  }
+   
 }
 
 @media (min-width: 768px) {
     .shadow-2 {
-      margin-top: 5.5rem;
-      
+      margin-top: 1.5rem;
   }
+
+  .shadow-21 {
+    margin-top: 5.5rem;
+}
 }

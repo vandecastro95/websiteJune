@@ -1,0 +1,245 @@
+.portfolio--root{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: -10px;
+}
+
+.portfolio--header {
+    font-size: 3rem;
+    width: 25rem;
+}
+
+.portfolio--container {
+    padding-left: 1rem;
+    padding-left: 1rem;
+    min-height: 70vh;
+    padding-bottom: 2rem;
+    position: relative;
+    justify-content: center;
+}
+
+.portfolio--list {
+    
+    display: flexbox;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.portfolio--h1 {
+    color: #333438;
+    letter-spacing: -.5rem;
+    margin-top: 6rem;
+    line-height: 1rem;
+    margin-bottom: 9rem;
+    border-bottom: solid #b0bec5 10px;
+    box-shadow: 5px 10px;
+}
+
+.portfolio--paper {
+    border: solid black 1px;
+    margin: 1rem 0;
+    -webkit-filter: brightness(100%);
+}
+
+.portfolio--paper:hover img {
+    -webkit-filter: brightness(30%);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.portfolio--subtitle {
+    font-size: 11px;
+}
+
+.portfolio--plus {
+    display: none;
+    font-size: 5rem;
+    position: absolute;
+    top: 26%;
+    left: 45%;
+    color: #eceff1;
+}
+
+.portfolio--title {
+    text-align: left;
+    line-height: .6rem;
+    display: none;
+    color: #efebe9  ;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-size: 12px;
+}
+
+.portfolio--paper:hover .portfolio--title {
+    z-index: 3;
+    display: block;
+}
+
+.portfolio--paper:hover .portfolio--plus {
+    z-index: 3;
+    display: block;
+}
+
+.ReactModalPortal > div {
+    opacity: 0;
+    border: none;
+}
+
+.ReactModalPortal .ReactModal__Overlay {
+    transition: opacity 200ms ease-in-out;
+}
+
+.ReactModalPortal .ReactModal__Overlay--after-open {
+    align-items: center;
+    display: flex; 
+    justify-content: center;
+    opacity: 1;
+}
+
+.ReactModalPortal .ReactModal__Overlay--before-close {
+    opacity: 0;
+}
+
+.Modal {
+    background: white;
+    color: black;
+    max-width: 27rem;
+    outline: none;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    box-shadow: 
+    6px 6px 0px lightgray, 
+    10px 10px 0px rgba(0, 0, 0, 1);
+}
+
+.modal--tag {
+    padding-right: 2rem;
+}
+
+.Modal__title {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 17px;
+    text-align: left;
+    font: 'opensans-bold', sans serif;
+}
+
+.Modal__body {
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 0 0 4rem 0;
+    word-break: break-all;
+}
+
+.modal--content {
+    text-align: left;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column; 
+    justify-content: left;
+}
+
+.modal--p {
+    font: 14px sans-serif;
+    color: #a1a1a1;
+}
+
+.modal--tech {
+    font: 11px/21px sans-serif;
+    color: #a1a1a1;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    text-align: left;
+}
+
+.modal--links {
+    height: 4rem;
+    align-items: left;
+    background: black;
+    color: #eceff1 ;
+    text-decoration: none;
+    width: 100%;
+    margin-top: 6rem;
+    background: #212121 ;
+    display: flex;
+    flex-direction: row-reverse; 
+    justify-content: left;
+}
+
+.modal--links button {
+    font-weight: bold;
+    margin: 0px;
+    font: 11px/21px 'opensans-bold', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 2.5px;
+    text-decoration: none;
+    border: none;
+    background: none;
+    color: white;
+}
+
+button:visited {
+    color: white;
+}
+
+button:link {
+    color: white;
+  }
+
+  .modal--links button:active {
+    border: none;
+    outline: none;
+  }
+
+
+.modal--links button:hover {
+    color: aqua;
+    transition: color .5s;
+}
+
+@media (min-width: 45rem) {
+    .portfolio--bigcontainer {
+        background-color: #212121;
+        margin-top: -3rem; 
+        margin-bottom: 2rem; 
+        min-height: 80vh;
+        margin-right: 6rem;
+        margin-left: 6rem;
+        padding: 3rem 6rem;
+    }
+
+    .portfolio--header {
+        font-size: 3rem;
+        position: relative;
+    }
+
+    .portfolio--container {
+        align-content: center;
+        justify-content: center;
+    }
+
+    .portfolio--paper {
+        border: solid black 3px;
+        margin: .32rem 1rem;
+        height: 200px;
+        width: 600px;
+
+    }
+
+    .portfolio--paper {
+        overflow: hidden;
+    }
+    
+
+}
