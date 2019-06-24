@@ -1,10 +1,12 @@
 {
-  "name": "Van De Castro",
+  "name": "vandecastro",
   "version": "0.1.0",
   "private": true,
+  "main": "server.js",
   "dependencies": {
     "@material-ui/core": "^4.1.1",
     "classnames": "^2.2.6",
+    "concurrently": "^4.1.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-modal": "^3.8.1",
@@ -14,7 +16,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "yarn run build"
   },
   "eslintConfig": {
     "extends": "react-app"
