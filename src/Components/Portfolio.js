@@ -21,13 +21,6 @@ class Portfolio extends React.Component {
         }
         this.handlePortfolioClick = this.handlePortfolioClick.bind(this);
     }
-
-    
-
-    onLinkClick = (link) => {
-        console.log('clicked ', link)
-    }
-
     handlePortfolioClick = (e) => {
         
         console.log(e)
@@ -42,10 +35,6 @@ class Portfolio extends React.Component {
         })
       }
 
-    handleChosen = (e   ) => {
-        console.log(e.target)
-    }
-    
     render () {
     return (
         <div>
@@ -206,22 +195,13 @@ class Portfolio extends React.Component {
                     >
                     CLOSE
                     </button>
-                    <button
-                    onClick={(e) => {
-                        if (e.stopPropagation) e.stopPropagation();
-                        this.onLinkClick(this.state.selectedOption.app)
-                    }}
-                    >
+                    <a
+                    href='https://travelsafe-project.herokuapp.com'>
                     {this.state.selectedOption.title}
-                    </button>
-                    <button
-                    onClick={
-                        (e) => {
-                            if (e.stopPropagation) e.stopPropagation();
-                            this.onLinkClick(this.state.selectedOption.github)}}
-                    >
+                    </a>
+                    <a href="https://github.com/vandecastro95/project_3">
                     GITHUB
-                    </button>
+                    </a>
                     
                 </div>
             </Modal>
@@ -259,16 +239,16 @@ class Portfolio extends React.Component {
                     >
                     CLOSE
                     </button>
-                    <button
-                    onClick={this.onLinkClick(this.state.selectedOption.app)}
+                    <a
+                    href="https://indecision-vdc.herokuapp.com/"
                     >
                     {this.state.selectedOption.title}
-                    </button>
-                    <button
-                    onClick={this.onLinkClick(this.state.selectedOption.github)}
+                    </a>
+                    <a
+                    href="https://github.com/vandecastro95/indecisionApp"
                     >
                     GITHUB
-                    </button>
+                    </a>
                 </div>
             </Modal>
         }
@@ -305,16 +285,16 @@ class Portfolio extends React.Component {
                     >
                     CLOSE
                     </button>
-                    <button
-                    onClick={this.onLinkClick(this.state.selectedOption.app)}
+                    <a
+                    href="https://github.com/vandecastro95/FriendFinder"
                     >
                     FRIEND FINDER
-                    </button>
-                    <button
-                    onClick={this.onLinkClick(this.state.selectedOption.github)}
+                    </a>
+                    <a
+                    href='https://friendfinder1232.herokuapp.com/'
                     >
                     GITHUB
-                    </button>
+                    </a>
                 </div>
             </Modal>
         }
@@ -351,11 +331,11 @@ class Portfolio extends React.Component {
                     >
                     CLOSE
                     </button>
-                    <button
-                    onClick={this.onLinkClick(this.state.selectedOption.github)}
+                    <a
+                    href="https://github.com/vandecastro95/Burger"
                     >
                     GITHUB
-                    </button>
+                    </a>
                 </div>
             </Modal>
         }
@@ -392,16 +372,16 @@ class Portfolio extends React.Component {
                     >
                     CLOSE
                     </button>
-                    <button
-                    onClick={this.onLinkClick(this.state.selectedOption.app)}
+                    <a
+                    href="https://github.com/vandecastro95/ben-to"
                     >
                     {this.state.selectedOption.title}
-                    </button>
-                    <button
-                    onClick={this.onLinkClick(this.state.selectedOption.github)}
+                    </a>
+                    <a
+                    href="https://github.com/vandecastro95/ben-to"
                     >
                     GITHUB
-                    </button>
+                    </a>
                 </div>
             </Modal>
         }
@@ -438,11 +418,11 @@ class Portfolio extends React.Component {
                     >
                     CLOSE
                     </button>
-                    <button
-                    onClick={this.onLinkClick(this.state.selectedOption.app)}
+                    <a
+                    href="https://arcane-ravine-73308.herokuapp.com/"
                     >
                     {this.state.selectedOption.title}
-                    </button>
+                    </a>
                 </div>
             </Modal>
         }

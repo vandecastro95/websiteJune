@@ -176,9 +176,38 @@
     justify-content: left;
 }
 
-.modal--links button {
+.modal--links a {
+    font-weight: bold;
+    margin-top: 1.3rem;
+    margin-right: 1rem;
+    font: 11px/21px 'opensans-bold', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 2.5px;
+    text-decoration: none;
+    border: none;
+    background: none;
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+a:link {
+    color: white;
+  }
+
+  .modal--links a:active {
+    border: none;
+    outline: none;
+  }
+
+  .modal--links button {
     font-weight: bold;
     margin: 0px;
+    padding: 0;
+    margin-right: 1rem;
     font: 11px/21px 'opensans-bold', sans-serif;
     text-transform: uppercase;
     cursor: pointer;
@@ -202,6 +231,11 @@ button:link {
     outline: none;
   }
 
+
+.modal--links a:hover {
+    color: aqua;
+    transition: color .5s;
+}
 
 .modal--links button:hover {
     color: aqua;
