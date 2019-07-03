@@ -196,7 +196,7 @@ class Portfolio extends React.Component {
                     CLOSE
                     </button>
                     <a
-                    href='https://travelsafe-project.herokuapp.com'>
+                    href='https://project3trip.herokuapp.com/'>
                     {this.state.selectedOption.title}
                     </a>
                     <a href="https://github.com/vandecastro95/project_3">
