@@ -20,7 +20,6 @@ const useStyles = makeStyles({
     },
     h1: {
         fontFamily: "\"Avant Garde\", 'Avantgarde', \"Century Gothic\", 'CenturyGothic', \"AppleGothic\", 'sans-serif",
-        textTransform: 'uppercase',
         textRendering: 'optimizeLegibility',
         padding: '0 2rem',
         alignItems: 'center',
@@ -66,6 +65,18 @@ const useStyles = makeStyles({
     },
     span: {
         fontSize: '30px'
+    },
+    bio: {
+        fontSize: '1rem',
+        fontWeight: '500',
+        textAlign: 'justify',
+        width: '22rem',
+        margin: '0 auto',
+        
+        ['@media (min-width:780px)']: { // eslint-disable-line no-useless-computed-key
+            width: '50rem',
+            marginTop: '-3rem'
+          },
     }
   });
 
@@ -79,8 +90,15 @@ const useStyles = makeStyles({
             <Box className={classes.h1}>
                     
                     <h1 className='shadow-21'>
-                    Front End Developer
+                    Software Developer
                     </h1>
+
+                    <div className={classes.bio}>
+                       &nbsp;&nbsp;&nbsp;&nbsp; Full Stack Developer with a hunger for new technology, 
+                       and a passion for growth. Brings experience from working at multiple startups to juggle
+                       priorities, quickly identify issues, and implement effective solutions. Adept at solving puzzles, and finds opportunities where
+                        others see roadblocks.
+                    </div>
                 
             </Box>
 

@@ -58,11 +58,20 @@ const useStyles = makeStyles({
         background: '#191919',
         color: '#DFE2DB'
     },
-    Location: {
-        backgroundColor: '#FFF9C4',
-        marginTop: '20rem',
-        width: '40% ',
-        margin: '0 auto'
+    contact: {
+        display: 'flex',
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
+    icon: {
+        display: 'flex',
+        flexDirection: 'column'
+    },
+    text: {
+        display: 'flex',
+        flexDirection: 'column',
+        marginLeft: '2rem'
     },
     h4: {
         marginTop: '-20px'
@@ -80,17 +89,31 @@ const useStyles = makeStyles({
                   Van de castro
                 </h1>
 
-                <span className='location'> 
-                <i className="material-icons">location_on</i>
-                Austin, Texas
-                </span>
+                
+
+                <div className="contact">
+                <div className={classes.contact}>
+                    <div className={classes.icon}>
+                    <i className="material-icons">email</i>
+                    <i className="material-icons">location_on</i>
+                    </div>
+
+                    <div className={classes.text}>
+                        <span className='email'> 
+                            vandecastro95@gmail.com
+                        </span>
+                        <span className='location'> 
+                            Austin, Texas
+                        </span>
+                    </div>
+                </div>
+                </div>
+
+                
 
                 <Box alignSelf="flex-end" ml={2} mt={6} className={classes.socialMedia}>
-                <a href="https://www.instagram.com/vaaanst/">
-                <img alt="linkedin" src="https://img.icons8.com/ios/50/FFF9C4/linkedin-filled.png"/>
-                </a>
                 <a href="https://www.linkedin.com/in/vandecastro/">
-                <img alt="instagram" src="https://img.icons8.com/material/50/FFF9C4/instagram-new.png"></img>
+                <img alt="instagram" src="https://img.icons8.com/material/50/FFF9C4/linkedin.png"></img>
                 </a>
                 <a href="https://github.com/vandecastro95">
                 <img alt="github" src="https://img.icons8.com/material/50/FFF9C4/github.png"></img>
