@@ -332,7 +332,12 @@ class Portfolio extends React.Component {
                     CLOSE
                     </button>
                     <a
-                    href="https://github.com/vandecastro95/Burger"
+                    href="https://new-where.herokuapp.com/"
+                    >
+                    {this.state.selectedOption.title}
+                    </a>
+                    <a
+                    href="https://github.com/vandecastro95/news-where"
                     >
                     GITHUB
                     </a>

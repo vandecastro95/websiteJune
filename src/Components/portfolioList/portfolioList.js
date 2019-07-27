@@ -29,11 +29,11 @@ export default [
     },
     {
         id: '04',
-        title: 'Burger of the Day!',
-        p: 'Restaurant App',
-        description: ['Express, Handlebars'],
-        github: 'https://github.com/vandecastro95/Burger',
-        app:'',
+        title: 'News Where',
+        p: 'News App',
+        description: ['React.jd, Material UI, Flexbox, Responsive Web Design, Express, Node.js, Apollo, GraphQL'],
+        github: 'https://github.com/vandecastro95/news-where',
+        app:'https://new-where.herokuapp.com/',
         photo: '../portfolioList/04.jpg'
     },
     {
